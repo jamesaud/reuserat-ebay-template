@@ -1,0 +1,75 @@
+
+@import "_colors";
+
+$grey: $grey-800;
+
+$size-1: 18px;
+$color-1: $orange-500;
+$color-2: $cyan-500;
+
+body{
+    border: 1px solid $grey-700;
+}
+
+.ebay{
+    font-weight: 300;
+}
+
+
+
+ul{
+    li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.section{
+    .title{
+        font-weight: 400;
+        font-size: $size-1;
+        color: $color-1;
+        border-bottom: 2px solid $color-2;
+        margin-bottom: 10px;
+        padding-bottom: 3px;
+    }
+}
+
+
+.description, .shipping, .return, .program, .contact, .section-logo, .section-images{
+    @extend .section;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+}
+
+.section-images{
+    margin-bottom: 50px;
+}
+
+.description{
+    img{
+        max-height: 400px;   
+    }
+    table{
+        font-weight: 300;
+        //color: $grey;
+        td{
+            padding-bottom: 7px;
+            padding-right: 15px;
+        }
+    }
+}
+
+
+#logo-subtitle{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    color: $grey-500;
+}
+
+#product-title{
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
